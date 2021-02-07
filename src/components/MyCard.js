@@ -26,7 +26,7 @@ const MyCard=({match})=>{
                         <Typography>
                             Toss Won :
                             <span style={{fontStyle:'italic',fontWeight:'bold'}}></span>
-                            {" "+match.toss_winner_team}
+                            {match.toss_winner_team ? " "+match.toss_winner_team : " "}
                         </Typography>
                         <Typography>
                             Match Type :
@@ -36,11 +36,11 @@ const MyCard=({match})=>{
                         <Typography>
                            Score :
                             <span style={{fontStyle:'italic',fontWeight:'bold'}}></span>
-                            {" "+detail.score} </Typography>
+                            {detail.score ? " "+detail.score : " "} </Typography>
                             <Typography>
                             Team Won :
                             <span style={{fontStyle:'italic',fontWeight:'bold'}}></span>
-                            {" "+match.winner_team}
+                            {match.winner_team ? " "+match.winner_team : " "}
                         </Typography></div>:" Match still not started"}
                        
                     </DialogContentText>
